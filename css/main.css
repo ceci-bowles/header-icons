@@ -19,6 +19,7 @@ header {
   font-weight: bold;
   text-align: center;
   padding: .5em 0 0;
+  overflow: hidden;
 }
 
 h1 {
@@ -32,13 +33,11 @@ img {
 
 .grain-left {
   float: left;
-  display: inline-block;
   max-width: 40px;
 }
 
 .grain-right {
   float: right;
-  display: inline-block;
   max-width: 40px;
 }
 
@@ -46,16 +45,17 @@ ul {
   margin: 0;
   padding: 0;
   clear: both;
+  border-top: 1px solid #a63f38;
 }
 
 .nav li {
   list-style-type: none;
-  display: inline-block;
-  padding: .4rem 2rem;
-  border: 1px solid #a63f38;
+  float: left;
+  width: 33.3%;
 }
 
 .nav a {
+  display: inline-block;
   list-style-type: none;
   color: #fff;
   text-decoration: none;
@@ -63,4 +63,12 @@ ul {
   line-height: 1.5;
   font-weight: bold;
   text-align: center;
+  padding: .5rem;
+  border-right: 1px solid #a63f38;
+  border-bottom: 1px solid #a63f38;
+  width: 100%;
+}
+
+a:hover {
+  background-color: #a63f38;
 }
