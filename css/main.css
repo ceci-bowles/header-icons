@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  font-family: Merriweather, serif;
 }
 
 *, *::before, *::after {
@@ -14,18 +14,53 @@ body {
 header {
   background-color: #d05c2e;
   color: #fff;
-  position:relative;
-  font-size: 2rem;
+  position: relative;
+  font-size: 1.125rem;
   font-weight: bold;
+  text-align: center;
+  padding: .5em 0 0;
 }
 
-.navigate {
-  text-decoration: none;
-}
-
-.nav li{
+h1 {
+  display: inline-block;
   margin: 0;
-  padding: .4rem 0;
+}
+
+img {
+  padding: .5rem 0;
+}
+
+.grain-left {
+  float: left;
+  display: inline-block;
+  max-width: 40px;
+}
+
+.grain-right {
+  float: right;
+  display: inline-block;
+  max-width: 40px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: .4rem 2rem;
+  border: 1px solid #a63f38;
+}
+
+.nav a {
   list-style-type: none;
   color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
 }
